@@ -1,0 +1,53 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Editar Evidencia</title>
+<link rel="stylesheet" href="editar_evidencia.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <h1>Editar Evidencia</h1>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="evidencias.html">Evidencias</a>
+</nav>
+
+<div class="edit-container">
+    <h2>Editar Archivo: proyecto1.pdf</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <label for="nombre">Nombre del Archivo</label>
+        <input type="text" id="nombre" name="nombre" value="proyecto1.pdf">
+
+        <label for="unidad">Unidad</label>
+        <select id="unidad" name="unidad">
+            <option value="unidad1" selected>Unidad 1</option>
+            <option value="unidad2">Unidad 2</option>
+            <option value="unidad3">Unidad 3</option>
+            <option value="unidad4">Unidad 4</option>
+        </select>
+
+        <label for="archivo">Subir Nuevo Archivo</label>
+        <input type="file" id="archivo" name="archivo">
+
+        <div class="acciones-form">
+            <input type="submit" value="Guardar Cambios">
+            <button type="button" class="btn-eliminar">Eliminar Archivo</button>
+        </div>
+    </form>
+</div>
+
+<footer>
+    <p>UTC 2026</p>
+</footer>
+
+</body>
+</html>
